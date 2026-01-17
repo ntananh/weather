@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampere Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <header class="header">
+            <div class="location">
+                <span class="location-icon">📍</span>
+                <span id="city-name">Tampere</span>
+            </div>
+            <div id="current-time" class="time"></div>
+        </header>
+
+        <main class="main-content">
+            <div class="current-weather">
+                <div class="temp-display">
+                    <img id="weather-icon" src="" alt="Weather icon" class="weather-icon">
+                    <div class="temperature">
+                        <span id="current-temp">--</span>°C
+                    </div>
+                </div>
+                <div class="weather-description">
+                    <p id="description">Loading weather data...</p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-icon">💨</span>
+                    <span class="detail-label">Wind</span>
+                    <span id="wind-speed" class="detail-value">-- m/s</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">💧</span>
+                    <span class="detail-label">Humidity</span>
+                    <span id="humidity" class="detail-value">--%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">🌡️</span>
+                    <span class="detail-label">Feels like</span>
+                    <span id="feels-like" class="detail-value">--°C</span>
+                </div>
+            </div>
+
+            <div class="hourly-forecast">
+                <h3>Next Hours</h3>
+                <div id="hourly-container" class="hourly-grid"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span id="last-update">Last updated: --</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
